@@ -1,0 +1,9 @@
+{
+	"name": "adfdatabricksworkshop",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f6e65ae1-ff45-4c66-9ae4-a3166845fc5b",
+		"tenantId": "b0c02a4b-95c0-451b-9a44-79d0723bb7d8"
+	}
+}
