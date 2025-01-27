@@ -5,11 +5,20 @@
 		"factoryName": {
 			"value": "adfdatabricksworkshop"
 		},
+		"AzureBlobStorageDataFlow_connectionString": {
+			"value": ""
+		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
 		"AzureBlobStorageSource_linkedservice_properties_typeProperties_serviceEndpoint": {
 			"value": "https://adfstagingabhishek.blob.core.windows.net/"
 		},
 		"AzureDataLakeStorage_Destination_properties_typeProperties_url": {
 			"value": "https://adfdestinationabhishek.dfs.core.windows.net/"
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "0120-065335-3wf849q7"
 		},
 		"containerUri": {
 			"value": ""

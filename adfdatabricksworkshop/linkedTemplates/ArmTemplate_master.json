@@ -7,6 +7,14 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adfdatabricksworkshop"
 		},
+		"AzureBlobStorageDataFlow_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorageDataFlow'"
+		},
+		"AzureDatabricks1_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'AzureDatabricks1'"
+		},
 		"AzureBlobStorageSource_linkedservice_properties_typeProperties_serviceEndpoint": {
 			"type": "string",
 			"defaultValue": "https://adfstagingabhishek.blob.core.windows.net/"
@@ -14,6 +22,10 @@
 		"AzureDataLakeStorage_Destination_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adfdestinationabhishek.dfs.core.windows.net/"
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0120-065335-3wf849q7"
 		},
 		"containerUri": {
 			"type": "string",
@@ -42,11 +54,20 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"AzureBlobStorageDataFlow_connectionString": {
+						"value": "[parameters('AzureBlobStorageDataFlow_connectionString')]"
+					},
+					"AzureDatabricks1_accessToken": {
+						"value": "[parameters('AzureDatabricks1_accessToken')]"
+					},
 					"AzureBlobStorageSource_linkedservice_properties_typeProperties_serviceEndpoint": {
 						"value": "[parameters('AzureBlobStorageSource_linkedservice_properties_typeProperties_serviceEndpoint')]"
 					},
 					"AzureDataLakeStorage_Destination_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage_Destination_properties_typeProperties_url')]"
+					},
+					"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('AzureDatabricks1_properties_typeProperties_existingClusterId')]"
 					}
 				}
 			},
